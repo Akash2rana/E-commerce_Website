@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+      
+      .main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+      }
+      .text{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+
+      }
+      .image{
+        margin-right: 30px;
+        margin-top: 40px;
+        padding: auto;
+      }
+      h1{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-weight: 100;
+        font-size: 60px;
+        text-align: center;
+      }
+      nav{
+        background-color: purple;
+        padding: 20px;
+        
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 300;
+
+    }
+    .bottom{
+      margin-top: 220px;
+    }
+    button{
+      font-size: 20px;
+      
+      padding: 8px;
+      border: none;
+
+
+    }
+    </style>
+    
+</head>
+<body>
+  <nav>
+    <caption><a href="main.html">Home Page</a></caption>
+</nav>
+    <h1>Our Services</h1><button id="btn1" onclick="black()">Dark Mode</button>
+<button id="btn1" onclick="white()">Light Mode</button>
+    <div class="main">
+        <div class="text">
+            <p>We provide the best shoes for sports and casual wear.</p>
+        </div>
+        <div class="image">
+        <img src="download.jpeg" height="400px" width="600px"></div>
+       
+        
+</div>
+<div class="bottom">
+  <p>&copy; 2024 NOKE company . All rights reserved</p>
+</div>
+<script>
+  function black(){
+    btn = document.getElementById("btn1")
+    btn.style.backgroundColor = "black";
+    btn.style.color ="white";
+    back = document.body.style.backgroundColor = "black";
+    back = document.body.style.color = "white";
+  }
+  function white(){
+    btn = document.getElementById("btn1")
+    btn.style.backgroundColor = "white";
+    btn.style.color ="black";
+    back = document.body.style.backgroundColor = "White";
+    back = document.body.style.color = "black";
+  }
+  
+</script>
+
+
+ 
+
+
+</body>
+</html>

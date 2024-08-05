@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign UP!</title>
+    <style>
+      body {
+        
+        background-image: url(b10.png);
+        background-repeat:no-repeat;
+        background-size: cover;
+        color: rgb(74, 188, 43);
+        font-weight: 100;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+      }
+      .btn{
+        padding: 10px 20px;
+        background-color: #c472ca;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        }
+    nav{
+        background-color: purple;
+        padding: 20px;
+        
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 300;
+
+    }
+label,input[type=text],input[type=password],input[type=email],input[type=number]{
+    display: block;
+    font-weight: 200;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+label,input[type=password]{
+    display: block;
+    font-weight: 200;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.button-container{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+}
+     
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <caption><a href="main.html">Home Page</a></caption>
+    </nav>
+    <form >
+    <table  cellspacing="10"  align="center" >
+        <form action="" method="post">
+            <tr>
+                <th colspan="2"><h1>Sign UP!</h1></th>
+                
+            </tr>
+            <tr>
+                <td><label for="name">Enter Name</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Enter Password</label></td>
+                <td><input type="password" id="password" value=""></td>
+            </tr>
+            <tr>
+                <td><label for="email">Enter Your Email</label></td>
+                <td><input type="email" placeholder="abc@gmail.com" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address: </label></td>
+                <td><textarea name="add" id="address" cols="30" rows="4" placeholder="address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="Select CITY">Select Your City</label></td>
+                <td><select id="city">
+                    <option value="select">-- SELECT --</option>
+                    <option value="Mumbai">MUMBAI</option>
+                    <option value="PUNE">PUNE</option>
+                    <option value="Banglorei">Banglore</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="Gender">Gender</label></td>
+                <td><input type="radio" id="male" value="gender" name="gender">Male
+                <input type="radio" id="female" value="gender" name="gender">Female</td>
+            </tr>
+            <tr>
+               <td><label for="AGE">Type your AGE: </label></td>
+              <td> <input type="number" name="age" min="9" max="100"></td>
+            </form>
+        </table>
+            
+           
+                    <div class="button-container">
+                    <input type="submit" class="btn" id="sub" value="Submit" onclick="getUserData()">
+                    <input type="Reset" class="btn" id="res" value="Reset Form">
+                    <a href="login.html" class="btn">Login</a></div>
+                
+        
+            
+            
+
+            
+      
+   
+   <script src="registration.js"></script> 
+</body>
+</html>
